@@ -1,95 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Zoo</title>
+    <meta charset="UTF-8">
+    <title>Zoo Animal Info</title>
     <style>
-        .header{
+        body {
+            background-color: #f0f8ff;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .header {
             text-align: center;
-            color: whitesmoke;
-            background-color: black;
+            font-size: 36px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        img {
+            display: block;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .nav-links {
+            margin: 20px 0;
         }
     </style>
 </head>
+
 <body>
-    <h1 class="header">Zoo Animal info</h1>
-    <div class="Animal Type">
+
+    <!-- Page Header -->
+    <h1 class="header">Zoo Animal Info</h1>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <p>
+            <a href="#diets">Go to Animal Diets (Internal Link)</a> |
+            <a href="https://www.nationalgeographic.com/animals" target="_blank">External Animal Site (New Tab)</a> |
+            <a href="#habitats">Visit Habitats Section (Bookmark)</a> |
+            <a href="mailto:zoo@example.com">Email Zoo</a> |
+            <a href="tel:+918888888888">Call Zoo</a>
+        </p>
+
+        <a href="https://www.nationalgeographic.com/animals" target="_blank">
+            <img src="image/clickable-image.jpeg" alt="Visit NatGeo" width="300">
+        </a>
+    </div>
+
+    <!-- Animal Type Section -->
+    <div>
         <h2>Animal Type</h2>
         <dl>
-            <dt><b>Mammals:This group includes familiar zoo favorites.</b></dt>
-            <dd>Examples: Lions, tigers, elephants, giraffes, zebras, rhinoceroses, bears, monkeys, pandas, leopards, dolphins, kangaroos, koalas, etc.</dd>
-            <img src="image/mammals.jpeg" alt="Error" width="400" height="250">
-            <dt><b>Birds: Zoos often feature a vibrant array of birds.</b></dt>
-            <dd>Examples: Eagles, parrots, peacocks, toucans, ostriches, penguins, owls, pelicans, macaws, hornbills, kingfishers, hummingbirds, etc.</dd>
-            <img src="image/birds.jpeg" alt="Error" width="400" height="250">
-            <dt><b>Reptiles: You'll encounter a variety of reptiles in dedicated reptile houses or enclosures.</b></dt>
-            <dd>Examples: Snakes (like boas and pythons), lizards (chameleons, geckos, iguanas), crocodiles, alligators, turtles, tortoises, Komodo dragons, etc.</dd>
-            <img src="image/raptiles.jpeg" alt="Error" width="400" height="250">
-            <dt><b>Amphibians: These creatures often reside in dedicated exhibits or amphibian centers.</b></dt>
-            <dd>Examples: Frogs, salamanders.</dd>
-            <img src="image/ampibians.jpeg" alt="Error" width="400" height="250">
-            <dt><b>Fish: Aquariums, often part of zoos, display diverse aquatic life.</b></dt>
-            <dd>Examples: Sharks, eels, stingrays, angelfish, seahorses, piranhas, etc.</dd>
-            <img src="image/fish.jpeg" alt="Error" width="400" height="250">
+            <dt><b>Mammals: </b></dt>
+            <dd>Examples: Lions, tigers, elephants, giraffes, etc.</dd>
+            <img src="image/mammals.jpeg" alt="Mammals" width="400">
+
+            <dt><b>Birds: </b></dt>
+            <dd>Examples: Eagles, parrots, peacocks, penguins, etc.</dd>
+            <img src="image/birds.jpeg" alt="Birds" width="400">
+
+            <dt><b>Reptiles: </b></dt>
+            <dd>Examples: Snakes, lizards, crocodiles, etc.</dd>
+            <img src="image/raptiles.jpeg" alt="Reptiles" width="400">
+
+            <dt><b>Amphibians: </b></dt>
+            <dd>Examples: Frogs, salamanders</dd>
+            <img src="image/ampibians.jpeg" alt="Amphibians" width="400">
+
+            <dt><b>Fish: </b></dt>
+            <dd>Examples: Sharks, stingrays, angelfish, etc.</dd>
+            <img src="image/fish.jpeg" alt="Fish" width="400">
         </dl>
-        <hr>
     </div>
-    <div class="Habitats">
+
+    <!-- Habitats Section -->
+    <div id="habitats">
         <h2>Habitats</h2>
-        <h4>Terrestrial habitats (land-based)</h4>
         <ol>
-            <li><b>Forests:</b></li>
-            <p><b>Tropical Rainforests:</b> Characterized by high temperatures and humidity, abundant rainfall, and a huge diversity of plant and animal life. They are found near the equator in areas like South America, Africa, Asia, and Australia.
-                <b>Examples:</b> Tigers, orangutans, monkeys, jaguars, gorillas.
-                <b>Temperate Forests:</b> Exhibit four distinct seasons and are home to both evergreen and deciduous trees.
-                <b>Examples:</b> Deer, bears, wolves, squirrels, woodpeckers.
-                <b>Boreal Forests (Taiga):</b> Cold and characterized by long, harsh winters.
-                <b>Examples:</b> Elk, lemmings, grizzly bears, wolves.</p>
-            <li><b>Grasslands:</b></li>
-            <p><b>Description:</b> Wide-open spaces with grasses and few trees.
-
-                <b>Climate:</b> Moderate rainfall; dry seasons.
-
-                <b>Animals Found:</b> Elephants, Bison, Antelope.</p>
-
-            <li><b>Ocean</b></li>
-            <p><b>Description:</b> Saltwater environments including seas and oceans.
-
-            <b>Climate:</b> Varies by region (tropical to polar).
-
-            <b>Animals Found:</b> Dolphins, Sharks, Whales.</p>
-        </ol>        
-    </div>
-    <div class="Animal Diets">
-        <h2>Animal Diets</h2>
-        <ol>
-            <li><b>Mammals</b></li>
-            <p><b>Herbivores:</b> Elephants, Deer (eat grass, leaves, fruits)
-
-                <b>Carnivores:</b> Lions, Tigers (eat other animals)
-
-                <b>Omnivores:</b> Bears, Monkeys (eat fruits, insects, small animals, fish)</p>
-            <li><b>Birds</b></li>
-            <p><b>Herbivores:</b> Parrots (eat seeds, fruits, nuts)
-
-                <b>Carnivores:</b> Eagles, Owls (eat small mammals, fish)
-
-                <b>Omnivores:</b> Crows, Ducks (eat plants, insects, small fish)</p>
-            <li><b>Reptiles</b></li>
-            <p><b>Carnivores:</b> Snakes, Crocodiles, Lizards (eat rodents, birds, insects, fish)
-                Some eat eggs, small animals, or even other reptiles. </p>
-            <li><b>Fish</b></li>
-            <p><b>Carnivores:</b> Sharks, Piranhas (eat other fish, crustaceans)
-
-                <b>Herbivores:</b> Parrotfish, Surgeonfish (eat algae and aquatic plants)
-
-                <b>Omnivores:</b> Goldfish, Guppies (eat plants, insects, small crustaceans) </p>
-            <li><b>Amphibians</b></li>
-            <p><b>Mostly Carnivores or Insectivores:</b>
-
-                Frogs, Salamanders, Newts (eat insects, worms, small fish)
-
-                Tadpoles (young frogs) are sometimes herbivores (eat algae)</p>
+            <li><b>Forests:</b>
+                <ul>
+                    <li><b>Tropical Rainforests:</b> Tigers, orangutans, monkeys</li>
+                    <li><b>Temperate Forests:</b> Deer, bears, wolves</li>
+                    <li><b>Boreal Forests (Taiga):</b> Elk, wolves, grizzly bears</li>
+                </ul>
+            </li>
+            <li><b>Grasslands:</b>
+                <ul>
+                    <li>Elephants, Bison, Antelope</li>
+                </ul>
+            </li>
+            <li><b>Oceans:</b>
+                <ul>
+                    <li>Dolphins, Sharks, Whales</li>
+                </ul>
+            </li>
         </ol>
     </div>
+
+    <!-- Animal Diets -->
+    <div id="diets">
+        <h2>Animal Diets</h2>
+        <ol>
+            <li><b>Mammals</b>
+                <p><b>Herbivores:</b> Elephants, Deer<br>
+                    <b>Carnivores:</b> Lions, Tigers<br>
+                    <b>Omnivores:</b> Bears, Monkeys
+                </p>
+            </li>
+            <li><b>Birds</b>
+                <p><b>Herbivores:</b> Parrots<br>
+                    <b>Carnivores:</b> Eagles, Owls<br>
+                    <b>Omnivores:</b> Crows, Ducks
+                </p>
+            </li>
+            <li><b>Reptiles</b>
+                <p><b>Carnivores:</b> Snakes, Crocodiles, Lizards</p>
+            </li>
+            <li><b>Fish</b>
+                <p><b>Carnivores:</b> Sharks, Piranhas<br>
+                    <b>Herbivores:</b> Parrotfish, Surgeonfish<br>
+                    <b>Omnivores:</b> Goldfish, Guppies
+                </p>
+            </li>
+            <li><b>Amphibians</b>
+                <p><b>Insectivores:</b> Frogs, Salamanders<br>
+                    <b>Tadpoles:</b> Herbivores - eat algae
+                </p>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Zoo Animal Info Table -->
+    <div>
+        <h2>Animal Overview Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Animal Type</th>
+                    <th>Examples</th>
+                    <th>Diet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mammals</td>
+                    <td>Lions, Monkeys, Elephants</td>
+                    <td>Herbivores, Carnivores, Omnivores</td>
+                </tr>
+                <tr>
+                    <td>Birds</td>
+                    <td>Parrots, Eagles, Owls</td>
+                    <td>Herbivores, Carnivores, Omnivores</td>
+                </tr>
+                <tr>
+                    <td>Fish</td>
+                    <td>Sharks, Goldfish, Piranhas</td>
+                    <td>Carnivores, Omnivores, Herbivores</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- HTML Comment -->
+    <!-- This is a simple Zoo Animal Info webpage with HTML5 features -->
+
 </body>
+
 </html>
